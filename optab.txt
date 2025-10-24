@@ -1,0 +1,7 @@
+  GNU nano 6.2                     optab.txt
+LDA 03
+STA 0F
+LDCH 53
+STCH 57
+END
+
