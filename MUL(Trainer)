@@ -1,0 +1,23 @@
+0400	CLC
+    	MOV BX,0700H
+    	MOV SI,0750H
+    	MOV DI,0800H
+    	MOV AX,[SI]
+    	MOV CX,[DI]
+    	MUL CX
+    	MOV [BX],AX
+    	MOV [BX+2],DX
+    	HLT
+
+INPUT
+0750 1A 
+0751 2B
+0800 4A
+0801 12
+
+OUTPUT
+0700 9E
+0701 74
+0703 14
+0704 03
+	
